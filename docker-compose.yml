@@ -4,8 +4,8 @@ services:
     image: golang:1.15.0-alpine
     working_dir: /go/src/example.com/http_demo
     volumes:
-      - /d/go-docker/src/example.com/http_demo:/go/src/example.com/http_demo
-      - /d/go-docker/src:/go/src
+      - /e/go-docker/src/example.com/http_demo:/go/src/example.com/http_demo
+      - /e/go-docker/src:/go/src
     ports:
       - "8000:8080"
     environment:

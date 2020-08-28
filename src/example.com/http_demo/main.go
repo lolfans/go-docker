@@ -44,5 +44,5 @@ func main() {
 type helloHandler struct{}
 
 func (*helloHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello World")
+	fmt.Fprintf(w, "Hello World 2020 愿世界和平！")
 }
