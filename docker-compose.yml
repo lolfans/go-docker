@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    image: golang:1.15.0-alpine
+    working_dir: /go/src/example.com/http_demo
+    volumes:
+      - /d/go-docker/go-demo/src/example.com/http_demo:/go/src/example.com/http_demo
+      - /d/go-docker/go-demo/src:/go/src
+    ports:
+      - "8000:8080"
+    environment:
+      WORKING_DIR: /go/src/example.com/http_demo
+    command: go run /go/src/example.com/http_demo/main.go
