@@ -2,6 +2,7 @@ docker-compose stop
 
 docker-compose up -d --build
 
+注意:docker-compose.yml的目录映射
 
 关于 go get的使用
 如果您使用的 Go 版本是 1.13 及以上 （推荐）
